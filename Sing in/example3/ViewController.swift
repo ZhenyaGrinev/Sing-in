@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func Check(_ sender: UIButton) {
         let newUser : User? = User.login(login: username.text!, password: password.text!)
         if(newUser != nil){
-            sender.setTitle("Your entered \(newUser!.login)", for: .normal)
+            sender.setTitle("Your entered user: \(newUser!.login)", for: .normal)
         }
     }
     override func viewDidLoad() {
